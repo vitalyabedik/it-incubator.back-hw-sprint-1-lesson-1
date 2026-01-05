@@ -40,7 +40,7 @@ describe('Video API', () => {
       .send(invalidCreateData1)
       .expect(EHttpStatus.BadRequest_400);
 
-    expect(invalidCreateRequest1.body.errorMessages).toHaveLength(3);
+    expect(invalidCreateRequest1.body.errorsMessages).toHaveLength(3);
 
     const invalidCreateData2: TCreateVideoInput = {
       title: '    ', // пустой title
@@ -53,7 +53,7 @@ describe('Video API', () => {
       .send(invalidCreateData2)
       .expect(EHttpStatus.BadRequest_400);
 
-    expect(invalidCreateRequest2.body.errorMessages).toHaveLength(3);
+    expect(invalidCreateRequest2.body.errorsMessages).toHaveLength(3);
 
     const videoResponse = await request(app).get(ERoutePath.Videos);
     expect(videoResponse.body).toHaveLength(0);
@@ -83,7 +83,7 @@ describe('Video API', () => {
       .send(invalidUpdateData1)
       .expect(EHttpStatus.BadRequest_400);
 
-    expect(invalidRequest1.body.errorMessages).toHaveLength(5);
+    expect(invalidRequest1.body.errorsMessages).toHaveLength(5);
 
     const invalidUpdateData2: TVideoInputDto = {
       title: '    ', // пустой title
@@ -99,7 +99,7 @@ describe('Video API', () => {
       .send(invalidUpdateData2)
       .expect(EHttpStatus.BadRequest_400);
 
-    expect(invalidRequest2.body.errorMessages).toHaveLength(5);
+    expect(invalidRequest2.body.errorsMessages).toHaveLength(5);
 
     const videoResponse = await request(app).get(
       `${ERoutePath.Videos}/${createResponse.body.id}`,

@@ -113,7 +113,7 @@ videosRouter
   )
 
   .delete(
-    ' /:id',
+    '/:id',
     (req: TRequestWithParams<TDeleteVideoParams>, res: Response) => {
       const index = db.videos.findIndex(
         (video) => video.id === Number(req.params.id),

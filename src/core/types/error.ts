@@ -1,5 +1,5 @@
 export type TAPIErrorResult<T> = {
-  errorMessages: TFieldError<T>[];
+  errorsMessages: TFieldError<T>[];
 };
 
 export type TFieldError<T> = {
