@@ -1,0 +1,5 @@
+export const VIDEO_TITLE_MAX_LENGTH = 40;
+
+export const VIDEO_AUTHOR_MAX_LENGTH = 20;
+
+export const VIDEO_MIN_AGE_RESTRICTION_MAX_LENGTH = 18;

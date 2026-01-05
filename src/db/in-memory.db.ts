@@ -1,0 +1,96 @@
+import { TVideo } from '../videos/types';
+import { EVideoResolution } from '../videos/constants';
+
+export const db = {
+  videos: <TVideo[]>[
+    {
+      id: 0,
+      title: 'Express',
+      author: 'Dimych',
+      canBeDownloaded: false,
+      minAgeRestriction: null,
+      createdAt: '2026-01-03T10:50:53.558Z',
+      publicationDate: '2026-01-03T10:50:53.558Z',
+      availableResolutions: [
+        EVideoResolution.P144,
+        EVideoResolution.P360,
+        EVideoResolution.P720,
+      ],
+    },
+    {
+      id: 1,
+      title: 'Nest',
+      author: 'Dimych',
+      canBeDownloaded: true,
+      minAgeRestriction: null,
+      createdAt: '2026-01-03T10:50:53.558Z',
+      publicationDate: '2026-01-03T10:50:53.558Z',
+      availableResolutions: [
+        EVideoResolution.P360,
+        EVideoResolution.P720,
+        EVideoResolution.P1440,
+        EVideoResolution.P2160,
+      ],
+    },
+    {
+      id: 2,
+      title: 'Redux',
+      author: 'Valera',
+      canBeDownloaded: true,
+      minAgeRestriction: null,
+      createdAt: '2026-01-03T10:50:53.558Z',
+      publicationDate: '2026-01-03T10:50:53.558Z',
+      availableResolutions: [
+        EVideoResolution.P360,
+        EVideoResolution.P720,
+        EVideoResolution.P1440,
+        EVideoResolution.P2160,
+      ],
+    },
+    {
+      id: 3,
+      title: 'React hook form',
+      author: 'Valera',
+      canBeDownloaded: true,
+      minAgeRestriction: null,
+      createdAt: '2026-01-03T10:50:53.558Z',
+      publicationDate: '2026-01-03T10:50:53.558Z',
+      availableResolutions: [
+        EVideoResolution.P360,
+        EVideoResolution.P720,
+        EVideoResolution.P1440,
+        EVideoResolution.P2160,
+      ],
+    },
+    {
+      id: 4,
+      title: 'JavaScript',
+      author: 'Viktor',
+      canBeDownloaded: true,
+      minAgeRestriction: null,
+      createdAt: '2026-01-03T10:50:53.558Z',
+      publicationDate: '2026-01-03T10:50:53.558Z',
+      availableResolutions: [
+        EVideoResolution.P360,
+        EVideoResolution.P720,
+        EVideoResolution.P1440,
+        EVideoResolution.P2160,
+      ],
+    },
+    {
+      id: 5,
+      title: 'HTML and CSS',
+      author: 'Sveta',
+      canBeDownloaded: true,
+      minAgeRestriction: null,
+      createdAt: '2026-01-03T10:50:53.558Z',
+      publicationDate: '2026-01-03T10:50:53.558Z',
+      availableResolutions: [
+        EVideoResolution.P360,
+        EVideoResolution.P720,
+        EVideoResolution.P1440,
+        EVideoResolution.P2160,
+      ],
+    },
+  ],
+};
